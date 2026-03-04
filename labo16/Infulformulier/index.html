@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Invulformulier - Labo 16</title>
+</head>
+<body>
+
+<form action="" method="GET">
+
+    <fieldset>
+        <legend>Persoonlijke informatie</legend>
+
+        <label for="voornaam">Voornaam*:</label>
+        <input type="text" id="voornaam" name="voornaam" placeholder="Your first name" autofocus required>
+
+        <br><br>
+
+        <label for="familienaam">Familienaam*:</label>
+        <input type="text" id="familienaam" name="familienaam" placeholder="Your last name" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sport</legend>
+        <p>Welke sport beoefen je?</p>
+
+        <input type="checkbox" id="lopen" name="sport" value="lopen">
+        <label for="lopen">Lopen</label><br>
+
+        <input type="checkbox" id="zwemmen" name="sport" value="zwemmen">
+        <label for="zwemmen">Zwemmen</label><br>
+
+        <input type="checkbox" id="roeien" name="sport" value="roeien">
+        <label for="roeien">Roeien</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Communicatievoorkeur</legend>
+        <p>Hoe kunnen we je bereiken?</p>
+
+        <input type="radio" id="post" name="contact" value="post">
+        <label for="post">Per post</label><br>
+
+        <input type="radio" id="email_pref" name="contact" value="email">
+        <label for="email_pref">E-mail</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Beveiliging & contact</legend>
+
+        <label for="wachtwoord">Wachtwoord*:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required>
+
+        <br><br>
+
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" placeholder="Geef je e-mailadres in">
+    </fieldset>
+
+    <fieldset>
+        <legend>Extra informatie</legend>
+
+        <label for="postcode">Belgische postcode*:</label>
+        <input type="text" id="postcode" name="postcode" placeholder="9999" required>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
