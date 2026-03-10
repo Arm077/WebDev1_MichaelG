@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+main {
+    background-color: #fff;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
