@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#picker-sectie {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+#preview-wrapper {
+    text-align: center;
+}
+
+#swatch {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(128, 128, 128);
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#hex-waarde {
+    font-weight: bold;
+    color: #666;
+}
+
+#sliders {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.slider-rij {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kanaal-label {
+    font-weight: bold;
+    width: 20px;
+}
+
+#rij-r .kanaal-label { color: red; }
+#rij-g .kanaal-label { color: green; }
+#rij-b .kanaal-label { color: blue; }
+
+.slider-track {
+    flex-grow: 1;
+}
+
+.kanaal-waarde {
+    width: 30px;
+    text-align: right;
+    color: #555;
+}
+
+#btnSave {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#btnSave:hover {
+    background-color: #0056b3;
+}
+
+#bewaard-sectie {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.sectie-header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#bewaard-lijst {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.bewaard-item {
+    position: relative;
+    display: inline-block;
+}
+
+.bewaard-swatch {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.bewaard-delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bewaard-delete:hover {
+    background-color: darkred;
+}

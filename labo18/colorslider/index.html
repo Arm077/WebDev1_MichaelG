@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorPicker</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+    <h1>ColorPicker</h1>
+</header>
+
+<main>
+    <section id="picker-sectie">
+        <div id="preview-wrapper">
+            <div id="swatch"></div>
+            <span id="hex-waarde">#808080</span>
+        </div>
+
+        <div id="sliders">
+            <div class="slider-rij" id="rij-r">
+                <span class="kanaal-label">R</span>
+                <div class="slider-track">
+                    <input type="range" id="sliderR" min="0" max="255" value="128">
+                </div>
+                <span class="kanaal-waarde" id="waardR">128</span>
+            </div>
+
+            <div class="slider-rij" id="rij-g">
+                <span class="kanaal-label">G</span>
+                <div class="slider-track">
+                    <input type="range" id="sliderG" min="0" max="255" value="128">
+                </div>
+                <span class="kanaal-waarde" id="waardG">128</span>
+            </div>
+
+            <div class="slider-rij" id="rij-b">
+                <span class="kanaal-label">B</span>
+                <div class="slider-track">
+                    <input type="range" id="sliderB" min="0" max="255" value="128">
+                </div>
+                <span class="kanaal-waarde" id="waardB">128</span>
+            </div>
+        </div>
+
+        <button id="btnSave">Save kleur</button>
+    </section>
+
+    <section id="bewaard-sectie">
+        <div class="sectie-header">
+            <h2>Bewaarde kleuren</h2>
+            <span id="tel-badge">0</span>
+        </div>
+        <p id="lege-melding">Nog geen kleuren opgeslagen.<br>Kies een kleur en klik op <em>Save kleur</em>.</p>
+        <div id="bewaard-lijst"></div>
+    </section>
+</main>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
