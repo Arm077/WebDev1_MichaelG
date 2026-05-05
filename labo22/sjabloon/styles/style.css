@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+#lege-melding {
+	display: none;
+}
+
+.history-card {
+	border-width: 0;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.history-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.12);
+}
+
+.history-card .card-text {
+	word-break: break-word;
+}
+
+.history-card .btn {
+	align-self: flex-start;
+}
+
